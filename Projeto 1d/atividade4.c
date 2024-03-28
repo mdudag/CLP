@@ -33,7 +33,7 @@ typedef struct tinstruction {
 
                             {CAL, 0,  9},          // call main                 5       
 
-                            {LOD, 0, 11},          // fat(5)
+                            {LOD, 0, 11},          // fib(5)
                             {STO, 0,  4},
                             {OPR, 0,  0},      // == fim main ==                8
 
