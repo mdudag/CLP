@@ -1,21 +1,6 @@
 ========== Analisador Lexico de Binarios ==========
 
-0 - Reconhecida!
-0 - Reconhecida!
-1 - Reconhecida!
-0 - Reconhecida!
-0 - Reconhecida!
-1 - Reconhecida!
-
-1 - Reconhecida!
-1 - Reconhecida!
-1 - Reconhecida!
-
-1 - Reconhecida!
-0 - Reconhecida!
-0 - Reconhecida!
-0 - Reconhecida!
-0 - Reconhecida!
-
-1 - Reconhecida!
-2 - Nao reconhecida.
+001001  - Reconhecida!
+111     - Reconhecida!
+10000   - Reconhecida!
+122     - Nao reconhecida.
