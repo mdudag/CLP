@@ -1,0 +1,28 @@
+========== Analisador Lexico de Decimais ==========
+
+0 - Reconhecida!
+3 - Reconhecida!
+4 - Reconhecida!
+5 - Reconhecida!
+
+2 - Reconhecida!
+0 - Reconhecida!
+2 - Reconhecida!
+1 - Reconhecida!
+2 - Reconhecida!
+1 - Reconhecida!
+3 - Reconhecida!
+3 - Reconhecida!
+6 - Reconhecida!
+
+0 - Reconhecida!
+7 - Reconhecida!
+5 - Reconhecida!
+2 - Reconhecida!
+9 - Reconhecida!
+5 - Reconhecida!
+
+2 - Reconhecida!
+2 - Reconhecida!
+0 - Reconhecida!
+# - Nao reconhecida.
