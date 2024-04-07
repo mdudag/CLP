@@ -6,7 +6,7 @@
 int main(void) {
     FILE *f; char c;
 
-    f = fopen("C:/Users/maria/OneDrive/Documentos/_UESC/Aulas/Conceitos de LP/Projeto 2a/file2.txt", "r");    
+    f = fopen("CLP/Projeto 2a/file2.txt", "r");    
     
     // Verificando se o arquivo foi aberto corretamente
     if (!f) {                       
