@@ -1,5 +1,5 @@
 // Discente Maria Eduarda Guedes Alves
-// Simulacao de Automato
+// Simulacao de Automato de Pilha
 
 #include <stdio.h>
 #include <string.h>
@@ -71,7 +71,7 @@ void printStack(char *s, int top) {
 }
 
 int main(void) {
-    FILE *f = fopen("C:/Users/maria/OneDrive/Documentos/_UESC/Aulas/Conceitos de LP/Projeto 2b/file.txt", "r");
+    FILE *f = fopen("file.txt", "r");
 
     // Verificando se o arquivo foi aberto corretamente
     if (!f) {                       
