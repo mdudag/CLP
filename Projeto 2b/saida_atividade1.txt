@@ -1,0 +1,67 @@
+--------------------------------------------------------
+  i |   Q |        .w | Stack | di |    pi |
+  0     Q0      .aacbb          d0
+  1     Q1      .aacbb  S       d1      p1
+  2     Q1      .aacbb  aSb     d3
+  3     Q1      a.acbb  Sb      d1      p1
+  4     Q1      a.acbb  aSbb    d3
+  5     Q1      aa.cbb  Sbb     d2      p2
+  6     Q1      aa.cbb  cbb     d5
+  7     Q1      aac.bb  bb      d4
+  8     Q1      aacb.b  b       d4
+  9     Q1      aacbb.
+--------------------------------------------------------
+  i |   Q |          .w |       Stack | di |    pi |
+  0     Q0      .aaacbbb                d0
+  1     Q1      .aaacbbb        S       d1      p1
+  2     Q1      .aaacbbb        aSb     d3
+  3     Q1      a.aacbbb        Sb      d1      p1
+  4     Q1      a.aacbbb        aSbb    d3
+  5     Q1      aa.acbbb        Sbb     d1      p1
+  6     Q1      aa.acbbb        aSbbb   d3
+  7     Q1      aaa.cbbb        Sbbb    d2      p2
+  8     Q1      aaa.cbbb        cbbb    d5
+  9     Q1      aaac.bbb        bbb     d4
+  10    Q1      aaacb.bb        bb      d4
+  11    Q1      aaacbb.b        b       d4
+  12    Q1      aaacbbb.
+--------------------------------------------------------
+  i |   Q |       .w | Stack | di |    pi |
+  0     Q0      .acb            d0
+  1     Q1      .acb    S       d1      p1
+  2     Q1      .acb    aSb     d3
+  3     Q1      a.cb    Sb      d2      p2
+  4     Q1      a.cb    cb      d5
+  5     Q1      ac.b    b       d4
+  6     Q1      acb.
+--------------------------------------------------------
+  i |   Q |            .w |     Stack | di |    pi |
+  0     Q0      .aaaacbbbb              d0
+  1     Q1      .aaaacbbbb      S       d1      p1
+  2     Q1      .aaaacbbbb      aSb     d3
+  3     Q1      a.aaacbbbb      Sb      d1      p1
+  4     Q1      a.aaacbbbb      aSbb    d3
+  5     Q1      aa.aacbbbb      Sbb     d1      p1
+  6     Q1      aa.aacbbbb      aSbbb   d3
+  7     Q1      aaa.acbbbb      Sbbb    d1      p1
+  8     Q1      aaa.acbbbb      aSbbbb  d3
+  9     Q1      aaaa.cbbbb      Sbbbb   d2      p2
+  10    Q1      aaaa.cbbbb      cbbbb   d5
+  11    Q1      aaaac.bbbb      bbbb    d4
+  12    Q1      aaaacb.bbb      bbb     d4
+  13    Q1      aaaacbb.bb      bb      d4
+  14    Q1      aaaacbbb.b      b       d4
+  15    Q1      aaaacbbbb.
+--------------------------------------------------------
+  i |   Q |        .w | Stack | di |    pi |
+  0     Q0      .aacb           d0
+  1     Q1      .aacb   S       d1      p1
+  2     Q1      .aacb   aSb     d3
+  3     Q1      a.acb   Sb      d1      p1
+  4     Q1      a.acb   aSbb    d3
+  5     Q1      aa.cb   Sbb     d2      p2
+  6     Q1      aa.cb   cbb     d5
+  7     Q1      aac.b   bb      d4
+  8     Q1      aacb.   b
+
+aacb - Palavra rejeitada.
