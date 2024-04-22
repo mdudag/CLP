@@ -1,3 +1,5 @@
+// Maria Eduarda Guedes Alves
+
 #include <stdio.h>
 
 #define LETTER      0
