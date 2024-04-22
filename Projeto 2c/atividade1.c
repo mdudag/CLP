@@ -269,7 +269,7 @@ void printP() {
 
 
 int main(void) {
-    FILE *f = fopen("C:/Users/maria/OneDrive/Documentos/_UESC/Aulas/Conceitos de LP/Projeto 2c/file.txt", "r");
+    FILE *f = fopen("file.txt", "r");
 
     if (!f) {
         printf("\nErro ao abrir arquivo!\n");
