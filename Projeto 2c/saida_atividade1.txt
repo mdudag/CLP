@@ -1,0 +1,47 @@
+========================================================
+Next token is: 9,       Next lexeme is xyz
+Next token is: 11,      Next lexeme is \n
+ - Expressao Aceita!
+p: p1 p4 p7 
+
+========================================================
+Next token is: 10,      Next lexeme is 1357
+Next token is: 11,      Next lexeme is \n
+ - Expressao Aceita!
+p: p1 p4 p8 
+
+========================================================
+Next token is: 10,      Next lexeme is 1
+Next token is: 5,       Next lexeme is +
+Next token is: 3,       Next lexeme is (
+Next token is: 10,      Next lexeme is 3
+Next token is: 7,       Next lexeme is *
+Next token is: 10,      Next lexeme is 5
+Next token is: 4,       Next lexeme is )
+Next token is: 11,      Next lexeme is \n
+ - Expressao Aceita!
+p: p2 p4 p8 p4 p9 p1 p5 p8 p8 
+
+========================================================
+Next token is: 3,       Next lexeme is (
+Next token is: 10,      Next lexeme is 5
+Next token is: 7,       Next lexeme is *
+Next token is: 10,      Next lexeme is 7
+Next token is: 4,       Next lexeme is )
+Next token is: 5,       Next lexeme is +
+Next token is: 3,       Next lexeme is (
+Next token is: 10,      Next lexeme is 9
+Next token is: 8,       Next lexeme is /
+Next token is: 10,      Next lexeme is 11
+Next token is: 4,       Next lexeme is )
+Next token is: 11,      Next lexeme is \n
+ - Expressao Aceita!
+p: p2 p4 p9 p1 p5 p8 p8 p4 p9 p1 p6 p8 p8
+
+========================================================
+Next token is: 3,       Next lexeme is (
+Next token is: 10,      Next lexeme is 8642
+Next token is: 4,       Next lexeme is )
+Next token is: -1,      Next lexeme is EOF
+ - Expressao Aceita!
+p: p1 p4 p9 p1 p4 p8
