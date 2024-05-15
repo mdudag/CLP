@@ -1,0 +1,10 @@
+% Maria Eduarda Guedes ALves
+
+?factorial(4,X).
+
+.
+.
+.
+
+?factorial(245,X).
+?factorial(246,X).    % erro
