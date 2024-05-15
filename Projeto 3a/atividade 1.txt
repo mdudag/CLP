@@ -1,3 +1,5 @@
+% Maria Eduarda Guedes Alves
+
 % Permutação de 4
 perm(A,B,C,D) :- neq4(A,B,C,D).
 neq4(A,B,C,D) :- neq(A,B),neq(A,C),neq(A,D),
