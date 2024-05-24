@@ -1,0 +1,71 @@
+Discente Maria Eduarda Guedes Alves
+
+PUSH(5)
+PUSH(2)
+y=POP(); x=POP(); PUSH(x SUB y)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x ADD y)
+X = []
+
+PUSH(5)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x SUB y)
+y=POP(); x=POP(); PUSH(x SUB y)
+X = []
+
+PUSH(1)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x MUL y)
+y=POP(); x=POP(); PUSH(x MUL y)
+true
+
+PUSH(1)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x MUL y)
+y=POP(); x=POP(); PUSH(x DIV y)
+true
+
+PUSH(1)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x MUL y)
+y=POP(); x=POP(); PUSH(x ADD y)
+true
+
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x MUL y)
+true
+
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x DIV y)
+true
+
+PUSH(1)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x DIV y)
+y=POP(); x=POP(); PUSH(x ADD y)
+true
+
+PUSH(1)
+PUSH(2)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x DIV y)
+y=POP(); x=POP(); PUSH(x MUL y)
+y=POP(); x=POP(); PUSH(x ADD y)
+true
+
+PUSH(1)
+PUSH(2)
+y=POP(); x=POP(); PUSH(x ADD y)
+PUSH(2)
+PUSH(3)
+y=POP(); x=POP(); PUSH(x MUL y)
+y=POP(); x=POP(); PUSH(x SUB y)
+true
