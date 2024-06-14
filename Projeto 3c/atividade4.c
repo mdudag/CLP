@@ -9,7 +9,7 @@ int push(char c, FILE *f, int t);
 int pop(char c, FILE *f);
 
 int main(void) {
-    FILE *f = fopen("C:/Users/maria/OneDrive/Documentos/_UESC/Aulas/Conceitos de LP/Projeto 3c/file.txt", "r");
+    FILE *f = fopen("file.txt", "r");
     char c;
 
     if (!f) {
