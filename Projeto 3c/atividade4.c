@@ -1,5 +1,3 @@
-# Discente Maria Eduarda Guedes Alves
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,7 +7,7 @@ int push(char c, FILE *f, int t);
 int pop(char c, FILE *f);
 
 int main(void) {
-    FILE *f = fopen("file.txt", "r");
+    FILE *f = fopen("atividade4_file.txt", "r");
     char c;
 
     if (!f) {
