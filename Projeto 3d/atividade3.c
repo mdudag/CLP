@@ -1,3 +1,5 @@
+Discente Maria Eduarda Guedes Alves
+
 #include <stdio.h>
 #include <stdlib.h>
 
