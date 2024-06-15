@@ -7,7 +7,7 @@ int num(FILE *f, char *c);
 int A(int m, int n);
 
 int main(void) {
-    FILE *f = fopen("atv_1_A_peter_robinson_file.txt", "r");
+    FILE *f = fopen("A_peter_robinson_file.txt", "r");
     char c = fgetc(f);
     int m, n;
 
