@@ -1,5 +1,7 @@
 // Discente Maria Eduarda Guedes Alves
 
+package atividade1;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
