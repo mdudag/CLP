@@ -2,63 +2,54 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-int Ack(int m, int n, int p);
-int num(FILE *f, char *c);
+int ack(int m, int n, int p);
 
 int main(void) {
-    FILE *f = fopen("ackermann_file.txt", "r");
-    char c = fgetc(f);
-    int m, n, p;
+    int i=3, m, n, p, R, ok=0;
+    double tEmMilSeg=0, tGasto;
+    clock_t t;
 
-    if (!f) {
-        printf("\nERRO ao abrir o arquivo!");
-        exit(-1);
+    for (m=0; m<i && !ok; m++) {
+        for (n=0; n<i && !ok; n++) {
+            for (p=0; p<i && !ok; p++) {
+
+                t = clock();
+                R = ack(m, n, p);  
+                t = clock()-t;
+
+                tGasto = ((double)t) / CLOCKS_PER_SEC * 1000;  // Tempo gasto em milissegundos
+                tEmMilSeg += tGasto;
+
+                printf("\nTempo gasto nesta chamada: %.6lf ms", tGasto);
+                printf("\nTempo acumulado: %.6lf ms", tEmMilSeg);
+                printf("\nack(%d, %d, %d): %d\n", m, n, p, R);
+
+                if (tEmMilSeg >= 60000) ok=1;       // Se passar de menos de 1 minuto
+            }
+        }
+
+        if (m+1 == i && !ok) i++;
     }
 
-    printf("\n");
-    while (c!=EOF) {
-        m = num(f, &c); c = fgetc(f);
-        n = num(f, &c); c = fgetc(f);
-        p = num(f, &c); c = fgetc(f);
-
-        printf("Ack(%d, %d, %d) = %d\n", m, n, p, Ack(m, n, p));
-    }
-
-    printf("\n");
-    fclose(f); return 0;
+    return 0;
 }
 
-int num(FILE *f, char *c) {
-    int a=0,  sinal=1;
-
-    if (*c=='-') {
-        sinal=-1;
-        *c=fgetc(f);
+int ack(int m, int n, int p) {
+    if ((m>=0) && (n>=0) && (p>=0)) {
+        if      (p==0)              return m+n;
+        else if ((n==0) && (p==1))  return 0;
+        else if ((n==0) && (p==2))  return 1;
+        else if ((n==0) && (p>2))   return p;
+        else if ((n>0)  && (p>0))   return ack(m,  ack(m, n-1, p), p-1);
+        else {
+            printf("Foi informado algum valor invalido!\n\n");
+            exit(-1);
+        }
     }
-    
-    while(*c != ' ' && *c != '\n' && *c != EOF) {
-        a = a*10 + (*c - '0');
-        *c=fgetc(f);
-    }
-
-    return sinal*a;
-}
-
-int Ack(int m, int n, int p) {
-    if      (p==0)         return m+n;
-    else if (n==0 && p==1) return 0;
-    else if (n==0 && p==2) return m;
-    else if (p==2) {
-        int val=1;
-        for (int i=0; i<n; i++) 
-            val *= m;
-        return val;
-    }
-    else if (p>2)          return p;
-    else if (n>0 && p>0)   return Ack(m,  Ack(m, n-1, p), p-1);
     else {
-        printf("Foi informado algum valor invalido!\n");
+        printf("Foi informado algum valor invalido!\n\n");
         exit(-1);
     }
 }
