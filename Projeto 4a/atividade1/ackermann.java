@@ -2,59 +2,44 @@
 
 package atividade1;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
-public class ackermann {
+public class Ackermann {
     public static void main(String[] args) {
-        BufferedReader f = null;
-        String linha, num[];
-        int m, n, p;
+        int i=3, m, n, p, R;
+        boolean ok=false;
+        double tEmMilSeg=0, tGasto;
+        long t;
 
-        try {
-            f = new BufferedReader(new FileReader("ackermann_file.txt"));
+        for (m=0; m<i && ok!=true; m++) {
+            for (n=0; n<i && ok!=true; n++) {
+                for (p=0; p<i && ok!=true; p++) {
+                    t = System.currentTimeMillis();
+                    R = ack(m, n, p);
+                    t = System.currentTimeMillis()-t;
 
-            System.err.println();
-            while ((linha = f.readLine()) != null) {
-                num = linha.split(" ");
-                m = Integer.parseInt(num[0]);
-                n = Integer.parseInt(num[1]);
-                p = Integer.parseInt(num[2]);
+                    tGasto = (double)t / 1000;  // Tempo gasto em milissegundos
+                    tEmMilSeg += tGasto;
 
-                System.out.printf("Ack(%d, %d, %d) = %d\n", m, n, p, Ack(m, n, p));
-            }
-            System.err.println();
-        } 
-        catch (IOException e) {
-            System.out.println("\nERRO ao abrir o arquivo!");
-            e.printStackTrace();
-        } 
-        finally {
-            if (f != null) {
-                try { f.close(); } 
-                catch (IOException e) {
-                    System.out.println("Erro ao fechar o arquivo!");
+                    System.out.printf("\nTempo gasto nesta chamada: %.6f ms", tGasto);
+                    System.out.printf("\nTempo acumulado: %.6f ms", tEmMilSeg);
+                    System.out.printf("\nack(%d, %d, %d): %d\n", m, n, p, R);
+
+                    if (tEmMilSeg >= 60000) ok = true;  // Se passar de menos de 1 minuto
                 }
             }
         }
     }
 
-    private static int Ack(int m, int n, int p) {
-        if      (p == 0)       return m+n;
-        else if (n==0 && p==1) return 0;
-        else if (n==0 && p==2) return m;
-        else if (p==2) {
-            int val = 1;
-            for (int i = 0; i < n; i++)
-                val *= m;
-            return val;
+    public static int ack(int m, int n, int p) {
+        if (m>=0 && n>=0 && p>=0) {
+            if (p==0) return m + n;
+            else if (n==0 && p==1) return 0;
+            else if (n==0 && p==2) return 1;
+            else if (n==0 && p>2) return p;
+            else if (n>0 && p>0) return ack(m, ack(m, n-1, p), p-1);
+        } else {
+            System.out.println("Foi informado algum valor invalido!\n\n");
+            System.exit(-1);
         }
-        else if (p > 2)          return p;
-        else if (n > 0 && p > 0) return Ack(m, Ack(m, n - 1, p), p - 1);
-        else {
-            System.out.println("Foi informado algum valor invalido!");
-            return -1; 
-        }
+        return -1;  
     }
 }
