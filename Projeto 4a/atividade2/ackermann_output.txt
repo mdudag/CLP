@@ -1,0 +1,151 @@
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 0, 0): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 0, 1): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 0, 2): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 1, 0): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 1, 1): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 1, 2): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 2, 0): 2
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 2, 1): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(0, 2, 2): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 0, 0): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 0, 1): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 0, 2): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 1, 0): 2
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 1, 1): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 1, 2): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 2, 0): 3
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 2, 1): 2
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(1, 2, 2): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 0, 0): 2
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 0, 1): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 0, 2): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 1, 0): 3
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 1, 1): 2
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 1, 2): 2
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 2, 0): 4
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 2, 1): 4
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(2, 2, 2): 4
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 0, 0): 3
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 0, 1): 0
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 0, 2): 1
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 0, 3): 3
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 1, 0): 4
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 1, 1): 3
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 1, 2): 3
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 1, 3): 27
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 2, 0): 5
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 2, 1): 6
+
+Tempo gasto nesta chamada: 0.000000 ms
+Tempo acumulado: 0.000000 ms
+ack(3, 2, 2): 9
