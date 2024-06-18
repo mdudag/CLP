@@ -25,8 +25,10 @@ int main() {
         t = clock()-t;
 
         tGasto += ((double)t) / CLOCKS_PER_SEC * 1000;
+        
+        printf("\n");
         printVet(vet, n);
-        printf("\nTempo gasto nesta chamada: %.6lf ms", tGasto);
+        printf("Tempo gasto nesta chamada: %.6lf ms\n", tGasto);
         system("pause");
     }
 
@@ -59,4 +61,4 @@ void InsertionSort(int vet[], int n) {
         }
         vet[j+1] = pivo;
     }
-}
+}   
