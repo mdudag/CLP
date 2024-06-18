@@ -2,54 +2,44 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-int num(FILE *f, char *c);
 int A(int m, int n);
 
 int main(void) {
-    FILE *f = fopen("A_peter_robinson_file.txt", "r");
-    char c = fgetc(f);
-    int m, n;
+    int i=5, m, n, R, ok=0;
+    double tEmMilSeg=0, tGasto;
+    clock_t t;
 
-    if (!f) {
-        printf("\nERRO ao abrir o arquivo!");
-        exit(-1);
+    for (m=0; m<i && !ok; m++) {
+        for (n=0; n<i && !ok; n++) {
+            t = clock();
+            R = A(m, n);  
+            t = clock()-t;
+
+            tGasto = ((double)t) / CLOCKS_PER_SEC * 1000;  // Tempo gasto em milissegundos
+            tEmMilSeg += tGasto;
+
+            printf("\nTempo gasto nesta chamada: %.6lf ms", tGasto);
+            printf("\nTempo acumulado: %.6lf ms", tEmMilSeg);
+            printf("\nA(%d, %d): %d\n", m, n, R);
+
+            if (tEmMilSeg >= 60000) ok=1;       // Se passar de menos de 1 minuto
+            
+        }
     }
 
-    printf("\n");
-    while (c!=EOF) {
-        m = num(f, &c); c = fgetc(f);
-        n = num(f, &c); c = fgetc(f);
-        printf("A(%d, %d) = %d\n", m, n, A(m, n));
-    }
-
-    printf("\n");
-    fclose(f); return 0;
-}
-
-int num(FILE *f, char *c) {
-    int a=0,  sinal=1;
-
-    if (*c=='-') {
-        sinal=-1;
-        *c=fgetc(f);
-    }
-    
-    while(*c != ' ' && *c != '\n' && *c != EOF) {
-        a = a*10 + (*c - '0');
-        *c=fgetc(f);
-    }
-
-    return sinal*a;
+    return 0;
 }
 
 int A(int m, int n) {
-    // printf("m: %d, n: %d\n", m, n);
-    if      (m==0) return n+1;
-    else if (m>0 && n==0) return A(m-1, 1);
-    else if (m>0 && n>0)  return A(m-1, A(m, n-1));
+    if ((m>=0) && (n>=0)) {
+        if      (m==0) return n+1;
+        else if (m>0 && n==0) return A(m-1, 1);
+        else if (m>0 && n>0)  return A(m-1, A(m, n-1));
+    }
     else {
-        printf("Foi informado algum valor invalido!\n");
+        printf("Foi informado algum valor invalido!\n\n");
         exit(-1);
     }
 }
