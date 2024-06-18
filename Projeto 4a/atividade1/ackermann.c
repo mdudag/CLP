@@ -43,10 +43,6 @@ int ack(int m, int n, int p) {
         else if ((n==0) && (p==2))  return 1;
         else if ((n==0) && (p>2))   return p;
         else if ((n>0)  && (p>0))   return ack(m,  ack(m, n-1, p), p-1);
-        else {
-            printf("Foi informado algum valor invalido!\n\n");
-            exit(-1);
-        }
     }
     else {
         printf("Foi informado algum valor invalido!\n\n");
