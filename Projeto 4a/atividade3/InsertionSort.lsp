@@ -20,3 +20,5 @@
 
   )
 )
+
+(print (insertionSort '(4 1 8 5 0)))
